@@ -1,0 +1,5 @@
+﻿steps:
+  - name: gcr.io/cloud-builders/docker
+    args: ["build","-f","deploy/Dockerfile.bank","-t","asia-southeast1-docker.pkg.dev/ringbreaker-aether-2026/ringbreaker/bank:0.1.0","."]
+images: ["asia-southeast1-docker.pkg.dev/ringbreaker-aether-2026/ringbreaker/bank:0.1.0"]
+timeout: 1200s

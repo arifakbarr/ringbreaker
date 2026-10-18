@@ -1,0 +1,14 @@
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - -f
+      - deploy/Dockerfile.hub
+      - -t
+      - ${_IMAGE}
+      - .
+images:
+  - ${_IMAGE}
+timeout: 1200s
+substitutions:
+  _IMAGE: asia-southeast1-docker.pkg.dev/ringbreaker-aether-2026/ringbreaker/hub:0.1.0

@@ -1,0 +1,53 @@
+# Free local stand-in for four Cloud Run services. No GCP billing required.
+# Usage: docker compose -f deploy/docker-compose.free.yml up --build
+services:
+  hub:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.hub
+    ports:
+      - "8080:8080"
+    environment:
+      SERVICE_ROLE: hub
+      MODE: LIVE
+      FREE_MODE: "1"
+      GCP_PROJECT: ringbreaker-demo-2026
+      GEMINI_MODEL: gemini-3.8-flash
+      # Leave GEMINI_API_KEY empty → template fallback only (RM 0)
+      SEED_HERO: "101"
+      HUB_URL: http://hub:8080
+      BANK_URLS: A=http://bank-a:8080,B=http://bank-b:8080,C=http://bank-c:8080
+    # No min-instances equivalent: containers only run while compose is up
+
+  bank-a:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.bank
+    environment:
+      SERVICE_ROLE: bank
+      BANK_ID: A
+      FREE_MODE: "1"
+      RINGBREAKER_HMAC_KEY: SYNTHETIC-DEV-KEY-NOT-FOR-PRODUCTION
+      REQUIRE_BANK_AUTH: "0"
+
+  bank-b:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.bank
+    environment:
+      SERVICE_ROLE: bank
+      BANK_ID: B
+      FREE_MODE: "1"
+      RINGBREAKER_HMAC_KEY: SYNTHETIC-DEV-KEY-NOT-FOR-PRODUCTION
+      REQUIRE_BANK_AUTH: "0"
+
+  bank-c:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.bank
+    environment:
+      SERVICE_ROLE: bank
+      BANK_ID: C
+      FREE_MODE: "1"
+      RINGBREAKER_HMAC_KEY: SYNTHETIC-DEV-KEY-NOT-FOR-PRODUCTION
+      REQUIRE_BANK_AUTH: "0"

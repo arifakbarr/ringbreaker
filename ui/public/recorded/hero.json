@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "seed": 103,
+    "time_to_detect_s": 540,
+    "ring_score": 0.9726850334369346,
+    "ring_alerted": true,
+    "cashed_out_today_myr": 46500.0,
+    "cashed_out_rb_myr": 0,
+    "stopped_myr": 46500.0,
+    "false_freezes": 0,
+    "lookalike_full_freezes": 0,
+    "planner_expected_myr": 74727.2,
+    "payee_p95_ms": 0.00016705598682165146,
+    "payee_v2_tier": 3,
+    "banks_spanned": [
+      "A",
+      "B",
+      "C"
+    ],
+    "ring_id": "CAND-103-0",
+    "freeze_tokens": [
+      "RRQ5MWWAK2MTRZJPSKUK6I",
+      "JH4GNJ6MXQJJXQNRK2NFXQ",
+      "YC6AJYHZ6P44XK5NSHAA4A",
+      "UZRXOTSOIHO4GIIB73WLN3"
+    ],
+    "meta": {
+      "synthetic": true,
+      "share_threshold": 0.35,
+      "score_thr": 0.094227727618995,
+      "analyst_delay_s": 120,
+      "freeze_k": 6,
+      "cash_out_complete_ts_today": 2067,
+      "n_interventions": 5,
+      "participating_banks": "ABC",
+      "use_federated": true,
+      "evasion": "E0",
+      "ledger": {
+        "A": {
+          "bank_id": "A",
+          "messages_by_type": {
+            "beacon.v1": 738,
+            "edge.v1": 2513
+          },
+          "bytes_by_type": {
+            "beacon.v1": 295013,
+            "edge.v1": 540662
+          },
+          "tokens_sent": 7978,
+          "raw_fields_sent": 0,
+          "synthetic": true
+        },
+        "B": {
+          "bank_id": "B",
+          "messages_by_type": {
+            "beacon.v1": 662,
+            "edge.v1": 3137
+          },
+          "bytes_by_type": {
+            "beacon.v1": 265259,
+            "edge.v1": 673673
+          },
+          "tokens_sent": 8922,
+          "raw_fields_sent": 0,
+          "synthetic": true
+        },
+        "C": {
+          "bank_id": "C",
+          "messages_by_type": {
+            "beacon.v1": 660,
+            "edge.v1": 2011
+          },
+          "bytes_by_type": {
+            "beacon.v1": 263846,
+            "edge.v1": 427867
+          },
+          "tokens_sent": 6662,
+          "raw_fields_sent": 0,
+          "synthetic": true
+        }
+      },
+      "raw_fields_sent_total": 0
+    }
+  }
+}

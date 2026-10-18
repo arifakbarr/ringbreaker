@@ -1,0 +1,187 @@
+{
+  "schema_version": "baselines.dev.v1",
+  "synthetic": true,
+  "badge": "SYNTHETIC DATA \u00b7 SIMULATION",
+  "in_our_simulation": true,
+  "generated_at": "2026-10-14T12:29:00.153619+00:00",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "account_fpr": 0.005,
+  "local_only": {
+    "cross_bank_ring_alert_rate": 0.0,
+    "any_mule_account_flag_rate": 1.0,
+    "mean_cashed_out_myr": 46500.002,
+    "n": 5,
+    "rows": [
+      {
+        "seed": 0,
+        "cross_bank_ring_alert": false,
+        "any_mule_account_flag": true,
+        "bank_stats": {
+          "A": {
+            "mule_flags": 2,
+            "flagged": 4,
+            "precision": 0.5
+          },
+          "B": {
+            "mule_flags": 1,
+            "flagged": 3,
+            "precision": 0.3333333333333333
+          },
+          "C": {
+            "mule_flags": 1,
+            "flagged": 3,
+            "precision": 0.3333333333333333
+          }
+        },
+        "cash_out_ts": 2064,
+        "cashed_out_myr": 46500.01
+      },
+      {
+        "seed": 1,
+        "cross_bank_ring_alert": false,
+        "any_mule_account_flag": true,
+        "bank_stats": {
+          "A": {
+            "mule_flags": 2,
+            "flagged": 4,
+            "precision": 0.5
+          },
+          "B": {
+            "mule_flags": 1,
+            "flagged": 3,
+            "precision": 0.3333333333333333
+          },
+          "C": {
+            "mule_flags": 1,
+            "flagged": 3,
+            "precision": 0.3333333333333333
+          }
+        },
+        "cash_out_ts": 2060,
+        "cashed_out_myr": 46500.0
+      },
+      {
+        "seed": 2,
+        "cross_bank_ring_alert": false,
+        "any_mule_account_flag": true,
+        "bank_stats": {
+          "A": {
+            "mule_flags": 2,
+            "flagged": 4,
+            "precision": 0.5
+          },
+          "B": {
+            "mule_flags": 2,
+            "flagged": 4,
+            "precision": 0.5
+          },
+          "C": {
+            "mule_flags": 1,
+            "flagged": 3,
+            "precision": 0.3333333333333333
+          }
+        },
+        "cash_out_ts": 2068,
+        "cashed_out_myr": 46500.0
+      },
+      {
+        "seed": 3,
+        "cross_bank_ring_alert": false,
+        "any_mule_account_flag": true,
+        "bank_stats": {
+          "A": {
+            "mule_flags": 2,
+            "flagged": 4,
+            "precision": 0.5
+          },
+          "B": {
+            "mule_flags": 1,
+            "flagged": 3,
+            "precision": 0.3333333333333333
+          },
+          "C": {
+            "mule_flags": 1,
+            "flagged": 3,
+            "precision": 0.3333333333333333
+          }
+        },
+        "cash_out_ts": 2056,
+        "cashed_out_myr": 46500.0
+      },
+      {
+        "seed": 4,
+        "cross_bank_ring_alert": false,
+        "any_mule_account_flag": true,
+        "bank_stats": {
+          "A": {
+            "mule_flags": 2,
+            "flagged": 4,
+            "precision": 0.5
+          },
+          "B": {
+            "mule_flags": 2,
+            "flagged": 4,
+            "precision": 0.5
+          },
+          "C": {
+            "mule_flags": 1,
+            "flagged": 3,
+            "precision": 0.3333333333333333
+          }
+        },
+        "cash_out_ts": 2067,
+        "cashed_out_myr": 46500.0
+      }
+    ]
+  },
+  "federated_plus_graph": {
+    "cross_bank_ring_alert_rate": 1.0,
+    "median_time_to_detect_s": 540.0,
+    "mean_stopped_myr": 38061.378000000004,
+    "n": 5,
+    "rows": [
+      {
+        "seed": 0,
+        "ring_alerted": true,
+        "time_to_detect_s": 540,
+        "stopped_myr": 46500.01,
+        "false_freezes": 0
+      },
+      {
+        "seed": 1,
+        "ring_alerted": true,
+        "time_to_detect_s": 540,
+        "stopped_myr": 46500.0,
+        "false_freezes": 0
+      },
+      {
+        "seed": 2,
+        "ring_alerted": true,
+        "time_to_detect_s": 540,
+        "stopped_myr": 44306.88,
+        "false_freezes": 0
+      },
+      {
+        "seed": 3,
+        "ring_alerted": true,
+        "time_to_detect_s": 540,
+        "stopped_myr": 46500.0,
+        "false_freezes": 0
+      },
+      {
+        "seed": 4,
+        "ring_alerted": true,
+        "time_to_detect_s": 480,
+        "stopped_myr": 6500.0,
+        "false_freezes": 0
+      }
+    ]
+  },
+  "reading": "In our simulation, local-only banks can flag individual mule-like accounts but never raise a cross-bank ring alert; money leaves (~mean cashed out). Federated+graph raises ring alerts and measures ringgit stopped via counterfactual replay."
+}

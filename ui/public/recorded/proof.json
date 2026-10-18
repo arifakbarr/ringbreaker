@@ -1,0 +1,185 @@
+{
+  "synthetic": true,
+  "in_our_simulation": true,
+  "generated_at": "2026-10-17T06:32:38.817386+00:00",
+  "config_hash": "1495cc41075ec5e8f8deb2f5b6d0b9220a2debfd4edae5e9eaa363d0aa0c2034",
+  "scoreboard": {
+    "seeds": [
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119
+    ],
+    "alert_rate": 1.0,
+    "time_to_detect_s": {
+      "mean": 525.0,
+      "ci95_low": 510.0,
+      "ci95_high": 537.0,
+      "n": 20
+    },
+    "stopped_myr": {
+      "mean": 38820.466,
+      "ci95_low": 31621.4955,
+      "ci95_high": 44519.296,
+      "n": 20
+    },
+    "false_freezes": {
+      "mean": 0.1,
+      "ci95_low": 0.0,
+      "ci95_high": 0.25,
+      "n": 20
+    }
+  },
+  "network_effect": [
+    {
+      "banks": "A",
+      "alert_rate": 1.0,
+      "stopped_myr": {
+        "mean": 17029.870000000003,
+        "ci95_low": 6385.62,
+        "ci95_high": 23234.663333333334,
+        "n": 3
+      },
+      "n": 3
+    },
+    {
+      "banks": "AB",
+      "alert_rate": 1.0,
+      "stopped_myr": {
+        "mean": 42033.07666666667,
+        "ci95_low": 37885.62,
+        "ci95_high": 44848.72,
+        "n": 3
+      },
+      "n": 3
+    },
+    {
+      "banks": "ABC",
+      "alert_rate": 1.0,
+      "stopped_myr": {
+        "mean": 46500.0,
+        "ci95_low": 46500.0,
+        "ci95_high": 46500.0,
+        "n": 3
+      },
+      "n": 3
+    }
+  ],
+  "evasion": [
+    {
+      "level": "E0",
+      "alert_rate": 1.0,
+      "stopped_myr": {
+        "mean": 46500.0,
+        "ci95_low": 46500.0,
+        "ci95_high": 46500.0,
+        "n": 3
+      },
+      "time_to_detect_s": {
+        "mean": 540.0,
+        "ci95_low": 540.0,
+        "ci95_high": 540.0,
+        "n": 3
+      },
+      "n": 3
+    },
+    {
+      "level": "E1",
+      "alert_rate": 1.0,
+      "stopped_myr": {
+        "mean": 33166.666666666664,
+        "ci95_low": 6500.0,
+        "ci95_high": 46500.0,
+        "n": 3
+      },
+      "time_to_detect_s": {
+        "mean": 860.0,
+        "ci95_low": 820.0,
+        "ci95_high": 900.0,
+        "n": 3
+      },
+      "n": 3
+    },
+    {
+      "level": "E2",
+      "alert_rate": 1.0,
+      "stopped_myr": {
+        "mean": 34106.20333333333,
+        "ci95_low": 31032.05,
+        "ci95_high": 36200.0,
+        "n": 3
+      },
+      "time_to_detect_s": {
+        "mean": 540.0,
+        "ci95_low": 540.0,
+        "ci95_high": 540.0,
+        "n": 3
+      },
+      "n": 3
+    },
+    {
+      "level": "E3",
+      "alert_rate": 1.0,
+      "stopped_myr": {
+        "mean": 46500.0,
+        "ci95_low": 46500.0,
+        "ci95_high": 46500.0,
+        "n": 3
+      },
+      "time_to_detect_s": {
+        "mean": 540.0,
+        "ci95_low": 540.0,
+        "ci95_high": 540.0,
+        "n": 3
+      },
+      "n": 3
+    },
+    {
+      "level": "E4",
+      "alert_rate": 1.0,
+      "stopped_myr": {
+        "mean": 34106.20333333333,
+        "ci95_low": 31032.05,
+        "ci95_high": 36200.0,
+        "n": 3
+      },
+      "time_to_detect_s": {
+        "mean": 840.0,
+        "ci95_low": 840.0,
+        "ci95_high": 840.0,
+        "n": 3
+      },
+      "n": 3
+    }
+  ],
+  "baseline": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "local_only_ring_alert_rate": 0.0,
+    "local_only_mean_cashed_out_myr": 46500.002,
+    "federated_ring_alert_rate": 1.0,
+    "federated_mean_stopped_myr": 38061.378000000004,
+    "n": 5
+  }
+}

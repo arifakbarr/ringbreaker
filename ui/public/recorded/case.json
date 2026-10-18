@@ -1,0 +1,193 @@
+{
+  "case_id": "CASE-TPL-CAND-103-0",
+  "ring_ref": "CAND-103-0",
+  "generated_at": "2026-10-17T06:50:21.836317+00:00",
+  "model_id": "template",
+  "prompt_version": "v1",
+  "mode": "template",
+  "headline": "Suspected mule ring across 3 banks (score 0.91)",
+  "risk_level": "high",
+  "confidence": "medium",
+  "confidence_basis": [
+    "deterministic_tools",
+    "template_fallback"
+  ],
+  "why_suspicious": [
+    {
+      "claim": "Ring score 0.9108 across 5 accounts",
+      "evidence_ids": [
+        "EV-overview-001"
+      ]
+    },
+    {
+      "claim": "Activity spans Bank A, Bank B, Bank C",
+      "evidence_ids": [
+        "EV-overview-001"
+      ]
+    },
+    {
+      "claim": "High pass-through of funds within a short horizon",
+      "evidence_ids": [
+        "EV-overview-001"
+      ]
+    }
+  ],
+  "money_trail": [
+    {
+      "from_alias": "ACC-03",
+      "to_alias": "ACC-02",
+      "amount_myr": 25000.0,
+      "ts": "485",
+      "evidence_id": "EV-edge-002"
+    },
+    {
+      "from_alias": "ACC-03",
+      "to_alias": "ACC-02",
+      "amount_myr": 25000.0,
+      "ts": "485",
+      "evidence_id": "EV-edge-003"
+    },
+    {
+      "from_alias": "ACC-03",
+      "to_alias": "ACC-04",
+      "amount_myr": 9323.32,
+      "ts": "490",
+      "evidence_id": "EV-edge-004"
+    },
+    {
+      "from_alias": "ACC-03",
+      "to_alias": "ACC-05",
+      "amount_myr": 5676.68,
+      "ts": "493",
+      "evidence_id": "EV-edge-005"
+    },
+    {
+      "from_alias": "ACC-01",
+      "to_alias": "ACC-03",
+      "amount_myr": 40000.0,
+      "ts": "0",
+      "evidence_id": "EV-edge-006"
+    }
+  ],
+  "freeze_priority": [
+    {
+      "rank": 1,
+      "alias": "ACC-03",
+      "bank": "Bank A",
+      "tier": "T4",
+      "expected_stopped_myr": 20923.15,
+      "false_freeze_risk": 0.018,
+      "rationale": "HIGH_NODE_SCORE, FAST_PASSTHROUGH, CROSS_BANK",
+      "evidence_ids": [
+        "EV-plan-008"
+      ]
+    },
+    {
+      "rank": 2,
+      "alias": "ACC-02",
+      "bank": "Bank C",
+      "tier": "T3",
+      "expected_stopped_myr": 11804.02,
+      "false_freeze_risk": 0.114,
+      "rationale": "HIGH_NODE_SCORE, FAST_PASSTHROUGH, CROSS_BANK",
+      "evidence_ids": [
+        "EV-plan-008"
+      ]
+    },
+    {
+      "rank": 3,
+      "alias": "ACC-04",
+      "bank": "Bank B",
+      "tier": "T2",
+      "expected_stopped_myr": 1273.74,
+      "false_freeze_risk": 0.218,
+      "rationale": "FAST_PASSTHROUGH, CROSS_BANK",
+      "evidence_ids": [
+        "EV-plan-008"
+      ]
+    }
+  ],
+  "counter_evidence": [],
+  "uncertainties": [
+    "Synthetic simulation; analyst must confirm."
+  ],
+  "signal_sensitivity": [
+    {
+      "signal": "link_density",
+      "score_without": 0.9108,
+      "delta": 0.0,
+      "evidence_id": "EV-cf-009"
+    },
+    {
+      "signal": "flow_through",
+      "score_without": 0.6279,
+      "delta": 0.2829,
+      "evidence_id": "EV-cf-010"
+    },
+    {
+      "signal": "cross_bank_span",
+      "score_without": 0.8059,
+      "delta": 0.1049,
+      "evidence_id": "EV-cf-011"
+    }
+  ],
+  "per_bank_notices": {
+    "Bank A": {
+      "accounts": [
+        "ACC-03"
+      ],
+      "recommended_action": "full freeze recommendation",
+      "text": "Ringbreaker recommends full freeze recommendation on 1 account(s) in your bank. Cross-bank ring spans 3 banks (risk high). Analyst approval required before enforcement. Synthetic simulation only.",
+      "text_en": "Ringbreaker recommends full freeze recommendation on 1 account(s) in your bank. Cross-bank ring spans 3 banks (risk high). Analyst approval required before enforcement. Synthetic simulation only.",
+      "text_ms": "Ringbreaker mencadangkan cadangan pembekuan penuh ke atas 1 akaun di bank anda. Rangkaian merentas 3 bank (risiko high). Kelulusan penganalisis diperlukan. Simulasi sintetik sahaja.",
+      "lang": "en"
+    },
+    "Bank C": {
+      "accounts": [
+        "ACC-02"
+      ],
+      "recommended_action": "partial hold recommendation",
+      "text": "Ringbreaker recommends partial hold recommendation on 1 account(s) in your bank. Cross-bank ring spans 3 banks (risk high). Analyst approval required before enforcement. Synthetic simulation only.",
+      "text_en": "Ringbreaker recommends partial hold recommendation on 1 account(s) in your bank. Cross-bank ring spans 3 banks (risk high). Analyst approval required before enforcement. Synthetic simulation only.",
+      "text_ms": "Ringbreaker mencadangkan cadangan penahanan separa ke atas 1 akaun di bank anda. Rangkaian merentas 3 bank (risiko high). Kelulusan penganalisis diperlukan. Simulasi sintetik sahaja.",
+      "lang": "en"
+    },
+    "Bank B": {
+      "accounts": [
+        "ACC-04"
+      ],
+      "recommended_action": "step-up verification",
+      "text": "Ringbreaker recommends step-up verification on 1 account(s) in your bank. Cross-bank ring spans 3 banks (risk high). Analyst approval required before enforcement. Synthetic simulation only.",
+      "text_en": "Ringbreaker recommends step-up verification on 1 account(s) in your bank. Cross-bank ring spans 3 banks (risk high). Analyst approval required before enforcement. Synthetic simulation only.",
+      "text_ms": "Ringbreaker mencadangkan pengesahan tambahan ke atas 1 akaun di bank anda. Rangkaian merentas 3 bank (risiko high). Kelulusan penganalisis diperlukan. Simulasi sintetik sahaja.",
+      "lang": "en"
+    }
+  },
+  "analyst_questions": [
+    "Any known-customer exemptions on the freeze list?"
+  ],
+  "_validation_repaired": [
+    "banned phrase: certain"
+  ],
+  "_evidence_ids": [
+    "EV-cf-009",
+    "EV-cf-010",
+    "EV-cf-011",
+    "EV-edge-002",
+    "EV-edge-003",
+    "EV-edge-004",
+    "EV-edge-005",
+    "EV-edge-006",
+    "EV-overview-001",
+    "EV-plan-008",
+    "EV-subgraph-007"
+  ],
+  "_aliases": {
+    "AFSMFVY7O56KTGJTRXD7UI": "ACC-01",
+    "JH4GNJ6MXQJJXQNRK2NFXQ": "ACC-02",
+    "RRQ5MWWAK2MTRZJPSKUK6I": "ACC-03",
+    "UZRXOTSOIHO4GIIB73WLN3": "ACC-04",
+    "YC6AJYHZ6P44XK5NSHAA4A": "ACC-05"
+  },
+  "feedback_applied": []
+}

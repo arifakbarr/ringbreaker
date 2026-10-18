@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ringbreaker"
+version = "0.1.0"
+description = "Privacy-preserving cross-bank mule-ring detection hub (synthetic demo)"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Ringbreaker Team" }]
+dependencies = [
+  "fastapi==0.115.6",
+  "uvicorn[standard]==0.34.0",
+  "pydantic==2.10.4",
+  "pydantic-settings==2.7.0",
+  "numpy==2.2.1",
+  "pandas==2.2.3",
+  "scikit-learn==1.6.0",
+  "networkx==3.4.2",
+  "httpx==0.28.1",
+  "orjson==3.10.12",
+  "python-multipart==0.0.20",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest==8.3.4",
+  "pytest-asyncio==0.25.0",
+  "ruff==0.8.4",
+  "mypy==1.14.0",
+]
+gemini = [
+  "google-genai>=1.0.0",
+]
+
+[project.scripts]
+ringbreaker-hero = "ringbreaker.harness.run_hero:main"
+ringbreaker-proof = "ringbreaker.harness.run_proof:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+
+[tool.mypy]
+python_version = "3.12"
+ignore_missing_imports = true
+warn_unused_ignores = true

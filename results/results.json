@@ -1,0 +1,1164 @@
+{
+  "schema_version": "results.v1",
+  "synthetic": true,
+  "badge": "SYNTHETIC DATA \u00b7 SIMULATION",
+  "in_our_simulation": true,
+  "generated_at": "2026-10-17T06:32:38.817386+00:00",
+  "package_version": "0.1.0",
+  "config": {
+    "seed_hero": 101,
+    "analyst_delay_s": 120,
+    "freeze_budget_k": 6,
+    "account_fpr": 0.005,
+    "share_threshold": 0.35,
+    "watch_threshold": 0.45,
+    "alert_threshold": 0.62,
+    "lookalike_share": 0.015,
+    "compliance_rate": 0.7,
+    "prompt_version": "v1",
+    "hmac_epoch": "e1"
+  },
+  "config_hash": "1495cc41075ec5e8f8deb2f5b6d0b9220a2debfd4edae5e9eaa363d0aa0c2034",
+  "hero": {
+    "seed": 103,
+    "time_to_detect_s": 540,
+    "ring_score": 0.9767431849111261,
+    "ring_alerted": true,
+    "cashed_out_today_myr": 46500.0,
+    "cashed_out_rb_myr": 4181.6,
+    "stopped_myr": 42318.4,
+    "false_freezes": 0,
+    "lookalike_full_freezes": 0,
+    "planner_expected_myr": 89325.96,
+    "payee_p95_ms": 0.0002080341801047325,
+    "payee_v2_tier": 3,
+    "banks_spanned": [
+      "A",
+      "B",
+      "C"
+    ],
+    "ring_id": "CAND-103-0",
+    "freeze_tokens": [
+      "RH6JXHGMHTUWQEX5VTITKI",
+      "VIE4TB2GHDTWNEXFE4FWUM",
+      "35TCZ5PE6DI4G3OH5227XK"
+    ],
+    "meta": {
+      "synthetic": true,
+      "share_threshold": 0.35,
+      "score_thr": 0.027197395751616834,
+      "analyst_delay_s": 120,
+      "freeze_k": 6,
+      "cash_out_complete_ts_today": 2061,
+      "n_interventions": 4,
+      "participating_banks": "ABC",
+      "use_federated": true,
+      "evasion": "E0",
+      "ledger": {
+        "A": {
+          "bank_id": "A",
+          "messages_by_type": {
+            "beacon.v1": 318,
+            "edge.v1": 1828
+          },
+          "bytes_by_type": {
+            "beacon.v1": 127690,
+            "edge.v1": 394082
+          },
+          "tokens_sent": 4928,
+          "raw_fields_sent": 0,
+          "synthetic": true
+        },
+        "B": {
+          "bank_id": "B",
+          "messages_by_type": {
+            "beacon.v1": 423,
+            "edge.v1": 2677
+          },
+          "bytes_by_type": {
+            "beacon.v1": 169441,
+            "edge.v1": 578121
+          },
+          "tokens_sent": 7046,
+          "raw_fields_sent": 0,
+          "synthetic": true
+        },
+        "C": {
+          "bank_id": "C",
+          "messages_by_type": {
+            "beacon.v1": 301,
+            "edge.v1": 1854
+          },
+          "bytes_by_type": {
+            "beacon.v1": 120389,
+            "edge.v1": 391448
+          },
+          "tokens_sent": 4912,
+          "raw_fields_sent": 0,
+          "synthetic": true
+        }
+      },
+      "raw_fields_sent_total": 0
+    }
+  },
+  "median_hero_seed": 103,
+  "experiments": {
+    "E-A": {
+      "status": "ok",
+      "config_hash": "1495cc41075ec5e8f8deb2f5b6d0b9220a2debfd4edae5e9eaa363d0aa0c2034",
+      "seeds": [
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119
+      ],
+      "accounts_per_bank": 250,
+      "alert_rate": 1.0,
+      "time_to_detect_s": {
+        "mean": 525.0,
+        "ci95_low": 510.0,
+        "ci95_high": 537.0,
+        "n": 20
+      },
+      "stopped_myr": {
+        "mean": 38820.466,
+        "ci95_low": 31621.4955,
+        "ci95_high": 44519.296,
+        "n": 20
+      },
+      "false_freezes": {
+        "mean": 0.1,
+        "ci95_low": 0.0,
+        "ci95_high": 0.25,
+        "n": 20
+      },
+      "median_hero_seed": 103,
+      "rows": [
+        {
+          "seed": 100,
+          "ring_alerted": true,
+          "time_to_detect_s": 540,
+          "stopped_myr": 46500.0,
+          "cashed_out_today_myr": 46500.0,
+          "cashed_out_rb_myr": 0,
+          "false_freezes": 0,
+          "lookalike_full_freezes": 0,
+          "ring_score": 0.9867887278460895
+        },
+        {
+          "seed": 101,
+          "ring_alerted": true,
+          "time_to_detect_s": 540,
+          "stopped_myr": 46500.0,
+          "cashed_out_today_myr": 46500.0,
+          "cashed_out_rb_myr": 0,
+          "false_freezes": 0,
+          "lookalike_full_freezes": 0,
+          "ring_score": 0.9808657475279694
+        },
+        {
+          "seed": 102,
+          "ring_alerted": true,
+          "time_to_detect_s": 540,
+          "stopped_myr": 46500.0,
+          "cashed_out_today_myr": 46500.0,
+          "cashed_out_rb_myr": 0,
+          "false_freezes": 0,
+          "lookalike_full_freezes": 0,
+          "ring_score": 0.9869132974050913
+        },
+        {
+          "seed": 103,
+          "ring_alerted": true,
+          "time_to_detect_s": 540,
+          "stopped_myr": 46500.0,
+          "cashed_out_today_myr": 46500.0,
+          "cashed_out_rb_myr": 0,
+          "false_freezes": 1,
+          "lookalike_full_freezes": 0,
+          "ring_score": 0.9785734170374051
+        },
+        {
+          "seed": 104,
+          "ring_alerted": true,
+          "time_to_detect_s": 480,
+          "stopped_myr": 14510.3,
+          "cashed_out_today_myr": 46500.0,
+          "cashed_out_rb_myr": 31989.7,
+          "false_freezes": 0,
+          "lookalike_full_freezes": 0,
+          "ring_score": 0.9731121688258026
+        },
+        {
+          "seed": 105,
+          "ring_alerted": true,
+          "time_to_detect_s": 540,
+          "stopped_myr": 38875.63,
+          "cashed_out_today_myr": 46500.0,
+          "cashed_out_rb_myr": 7624.37,
+          "false_freezes": 0,
+          "lookalike_full_freezes": 0,
+          "ring_score": 0.9752827378722688
+        },
+        {
+          "seed": 106,
+          "ring_alerted": true,
+          "time_to_detect_s": 540,
+          "stopped_myr": 46499.99,
+          "cashed_out_today_myr": 46499.99,
+          "cashed_out_rb_myr": 0,
+          "false_freezes": 0,
+          "lookalike_full_freezes": 0,
+          "ring_score": 0.9723912514184229
+        },
+        {
+          "seed": 107,
+          "ring_alerted": true,
+          "time_to_detect_s": 420,
+          "stopped_myr": 6500.0,
+          "cashed_out_today_myr": 46500.0,
+          "cashed_out_rb_myr": 40000.0,
+          "false_freezes": 1,
+          "lookalike_full_freezes": 0,
+          "ring_score": 0.9336343485043317
+        },
+        {
+          "seed": 108,
+          "ring_alerted": true,
+          "time_to_detect_s": 540,
+          "stopped_myr": 46500.0,
+          "cashed_out_today_myr": 46500.0,
+          "cashed_out_rb_myr": 0,
+          "false_freezes": 0,
+          "lookalike_full_freezes": 0,
+          "ring_score": 0.9868536233801284
+        },
+        {
+          "seed": 109,
+          "ring_alerted": true,
+          "time_to_detect_s": 540,
+          "stopped_myr": 46499.99,
+          "cashed_out_today_myr": 46499.99,
+          "cashed_out_rb_myr": 0,
+          "false_freezes": 0,
+          "lookalike_full_freezes": 0,
+          "ring_score": 0.9729799829367273
+        },
+        {
+          "seed": 110,
+          "ring_alerted": true,
+          "time_to_detect_s": 540,
+          "stopped_myr": 46500.0,
+          "cashed_out_today_myr": 46500.0,
+          "cashed_out_rb_myr": 0,
+          "false_freezes": 0,
+          "lookalike_full_freezes": 0,
+          "ring_score": 0.9870796295680074
+        },
+        {
+          "seed": 111,
+          "ring_alerted": true,
+          "time_to_detect_s": 540,
+          "stopped_myr": 46500.0,
+          "cashed_out_today_myr": 46500.0,
+          "cashed_out_rb_myr": 0,
+          "false_freezes": 0,
+          "lookalike_full_freezes": 0,
+          "ring_score": 0.9866765356776058
+        },
+        {
+          "seed": 112,
+          "ring_alerted": true,
+          "time_to_detect_s": 540,
+          "stopped_myr": 46500.0,
+          "cashed_out_today_myr": 46500.0,
+          "cashed_out_rb_myr": 0,
+          "false_freezes": 0,
+          "lookalike_full_freezes": 0,
+          "ring_score": 0.9874893514216049
+        },
+        {
+          "seed": 113,
+          "ring_alerted": true,
+          "time_to_detect_s": 540,
+          "stopped_myr": 46500.0,
+          "cashed_out_today_myr": 46500.0,
+          "cashed_out_rb_myr": 0,
+          "false_freezes": 0,
+          "lookalike_full_freezes": 0,
+          "ring_score": 0.9849916366113042
+        },
+        {
+          "seed": 114,
+          "ring_alerted": true,
+          "time_to_detect_s": 540,
+          "stopped_myr": 46500.0,
+          "cashed_out_today_myr": 46500.0,
+          "cashed_out_rb_myr": 0,
+          "false_freezes": 0,
+          "lookalike_full_freezes": 0,
+          "ring_score": 0.9899978781604801
+        },
+        {
+          "seed": 115,
+          "ring_alerted": true,
+          "time_to_detect_s": 480,
+          "stopped_myr": 6500.0,
+          "cashed_out_today_myr": 46500.0,
+          "cashed_out_rb_myr": 40000.0,
+          "false_freezes": 0,
+          "lookalike_full_freezes": 0,
+          "ring_score": 0.9318389905182549
+        },
+        {
+          "seed": 116,
+          "ring_alerted": true,
+          "time_to_detect_s": 540,
+          "stopped_myr": 46500.0,
+          "cashed_out_today_myr": 46500.0,
+          "cashed_out_rb_myr": 0,
+          "false_freezes": 0,
+          "lookalike_full_freezes": 0,
+          "ring_score": 0.9909223924385372
+        },
+        {
+          "seed": 117,
+          "ring_alerted": true,
+          "time_to_detect_s": 540,
+          "stopped_myr": 46500.0,
+          "cashed_out_today_myr": 46500.0,
+          "cashed_out_rb_myr": 0,
+          "false_freezes": 0,
+          "lookalike_full_freezes": 0,
+          "ring_score": 0.9913049261858824
+        },
+        {
+          "seed": 118,
+          "ring_alerted": true,
+          "time_to_detect_s": 540,
+          "stopped_myr": 46500.01,
+          "cashed_out_today_myr": 46500.01,
+          "cashed_out_rb_myr": 0,
+          "false_freezes": 0,
+          "lookalike_full_freezes": 0,
+          "ring_score": 0.9762439564089591
+        },
+        {
+          "seed": 119,
+          "ring_alerted": true,
+          "time_to_detect_s": 480,
+          "stopped_myr": 12523.4,
+          "cashed_out_today_myr": 46500.01,
+          "cashed_out_rb_myr": 33976.61,
+          "false_freezes": 0,
+          "lookalike_full_freezes": 0,
+          "ring_score": 0.960776000713619
+        }
+      ],
+      "reading": "E-A test-seed scoreboard (in our simulation). Numbers only from this harness; not predictions for real banks."
+    },
+    "E-B": {
+      "status": "ok",
+      "by_participation": {
+        "A": {
+          "alert_rate": 1.0,
+          "stopped_myr": {
+            "mean": 17029.870000000003,
+            "ci95_low": 6385.62,
+            "ci95_high": 23234.663333333334,
+            "n": 3
+          },
+          "n": 3
+        },
+        "AB": {
+          "alert_rate": 1.0,
+          "stopped_myr": {
+            "mean": 42033.07666666667,
+            "ci95_low": 37885.62,
+            "ci95_high": 44848.72,
+            "n": 3
+          },
+          "n": 3
+        },
+        "ABC": {
+          "alert_rate": 1.0,
+          "stopped_myr": {
+            "mean": 46500.0,
+            "ci95_low": 46500.0,
+            "ci95_high": 46500.0,
+            "n": 3
+          },
+          "n": 3
+        }
+      },
+      "rows": [
+        {
+          "banks": "A",
+          "n_banks": 1,
+          "seed": 100,
+          "ring_alerted": true,
+          "stopped_myr": 25000.0,
+          "time_to_detect_s": 540
+        },
+        {
+          "banks": "A",
+          "n_banks": 1,
+          "seed": 101,
+          "ring_alerted": true,
+          "stopped_myr": 19703.99,
+          "time_to_detect_s": 540
+        },
+        {
+          "banks": "A",
+          "n_banks": 1,
+          "seed": 102,
+          "ring_alerted": true,
+          "stopped_myr": 6385.62,
+          "time_to_detect_s": 540
+        },
+        {
+          "banks": "AB",
+          "n_banks": 2,
+          "seed": 100,
+          "ring_alerted": true,
+          "stopped_myr": 41881.06,
+          "time_to_detect_s": 540
+        },
+        {
+          "banks": "AB",
+          "n_banks": 2,
+          "seed": 101,
+          "ring_alerted": true,
+          "stopped_myr": 46332.55,
+          "time_to_detect_s": 540
+        },
+        {
+          "banks": "AB",
+          "n_banks": 2,
+          "seed": 102,
+          "ring_alerted": true,
+          "stopped_myr": 37885.62,
+          "time_to_detect_s": 540
+        },
+        {
+          "banks": "ABC",
+          "n_banks": 3,
+          "seed": 100,
+          "ring_alerted": true,
+          "stopped_myr": 46500.0,
+          "time_to_detect_s": 540
+        },
+        {
+          "banks": "ABC",
+          "n_banks": 3,
+          "seed": 101,
+          "ring_alerted": true,
+          "stopped_myr": 46500.0,
+          "time_to_detect_s": 540
+        },
+        {
+          "banks": "ABC",
+          "n_banks": 3,
+          "seed": 102,
+          "ring_alerted": true,
+          "stopped_myr": 46500.0,
+          "time_to_detect_s": 540
+        }
+      ],
+      "reading": "In our simulation, cross-bank ring alerts and stopped MYR rise as more banks share tokenised beacons/edges with the hub (network effect)."
+    },
+    "E-C": {
+      "status": "ok",
+      "by_delay_s": {
+        "0": {
+          "stopped_myr": {
+            "mean": 46500.0,
+            "ci95_low": 46500.0,
+            "ci95_high": 46500.0,
+            "n": 3
+          },
+          "mean_cashed_rb": 0.0,
+          "n": 3
+        },
+        "60": {
+          "stopped_myr": {
+            "mean": 46500.0,
+            "ci95_low": 46500.0,
+            "ci95_high": 46500.0,
+            "n": 3
+          },
+          "mean_cashed_rb": 0.0,
+          "n": 3
+        },
+        "120": {
+          "stopped_myr": {
+            "mean": 46500.0,
+            "ci95_low": 46500.0,
+            "ci95_high": 46500.0,
+            "n": 3
+          },
+          "mean_cashed_rb": 0.0,
+          "n": 3
+        },
+        "300": {
+          "stopped_myr": {
+            "mean": 46500.0,
+            "ci95_low": 46500.0,
+            "ci95_high": 46500.0,
+            "n": 3
+          },
+          "mean_cashed_rb": 0.0,
+          "n": 3
+        }
+      },
+      "rows": [
+        {
+          "analyst_delay_s": 0,
+          "seed": 100,
+          "stopped_myr": 46500.0,
+          "ring_alerted": true,
+          "cashed_out_rb_myr": 0
+        },
+        {
+          "analyst_delay_s": 0,
+          "seed": 101,
+          "stopped_myr": 46500.0,
+          "ring_alerted": true,
+          "cashed_out_rb_myr": 0
+        },
+        {
+          "analyst_delay_s": 0,
+          "seed": 102,
+          "stopped_myr": 46500.0,
+          "ring_alerted": true,
+          "cashed_out_rb_myr": 0
+        },
+        {
+          "analyst_delay_s": 60,
+          "seed": 100,
+          "stopped_myr": 46500.0,
+          "ring_alerted": true,
+          "cashed_out_rb_myr": 0
+        },
+        {
+          "analyst_delay_s": 60,
+          "seed": 101,
+          "stopped_myr": 46500.0,
+          "ring_alerted": true,
+          "cashed_out_rb_myr": 0
+        },
+        {
+          "analyst_delay_s": 60,
+          "seed": 102,
+          "stopped_myr": 46500.0,
+          "ring_alerted": true,
+          "cashed_out_rb_myr": 0
+        },
+        {
+          "analyst_delay_s": 120,
+          "seed": 100,
+          "stopped_myr": 46500.0,
+          "ring_alerted": true,
+          "cashed_out_rb_myr": 0
+        },
+        {
+          "analyst_delay_s": 120,
+          "seed": 101,
+          "stopped_myr": 46500.0,
+          "ring_alerted": true,
+          "cashed_out_rb_myr": 0
+        },
+        {
+          "analyst_delay_s": 120,
+          "seed": 102,
+          "stopped_myr": 46500.0,
+          "ring_alerted": true,
+          "cashed_out_rb_myr": 0
+        },
+        {
+          "analyst_delay_s": 300,
+          "seed": 100,
+          "stopped_myr": 46500.0,
+          "ring_alerted": true,
+          "cashed_out_rb_myr": 0
+        },
+        {
+          "analyst_delay_s": 300,
+          "seed": 101,
+          "stopped_myr": 46500.0,
+          "ring_alerted": true,
+          "cashed_out_rb_myr": 0
+        },
+        {
+          "analyst_delay_s": 300,
+          "seed": 102,
+          "stopped_myr": 46500.0,
+          "ring_alerted": true,
+          "cashed_out_rb_myr": 0
+        }
+      ],
+      "reading": "Longer analyst delay leaves more money cashed out before freezes apply."
+    },
+    "E-D": {
+      "status": "ok",
+      "by_evasion": {
+        "E0": {
+          "alert_rate": 1.0,
+          "stopped_myr": {
+            "mean": 46500.0,
+            "ci95_low": 46500.0,
+            "ci95_high": 46500.0,
+            "n": 3
+          },
+          "time_to_detect_s": {
+            "mean": 540.0,
+            "ci95_low": 540.0,
+            "ci95_high": 540.0,
+            "n": 3
+          },
+          "mean_false_freezes": 0.0,
+          "n": 3
+        },
+        "E1": {
+          "alert_rate": 1.0,
+          "stopped_myr": {
+            "mean": 33166.666666666664,
+            "ci95_low": 6500.0,
+            "ci95_high": 46500.0,
+            "n": 3
+          },
+          "time_to_detect_s": {
+            "mean": 860.0,
+            "ci95_low": 820.0,
+            "ci95_high": 900.0,
+            "n": 3
+          },
+          "mean_false_freezes": 0.3333333333333333,
+          "n": 3
+        },
+        "E2": {
+          "alert_rate": 1.0,
+          "stopped_myr": {
+            "mean": 34106.20333333333,
+            "ci95_low": 31032.05,
+            "ci95_high": 36200.0,
+            "n": 3
+          },
+          "time_to_detect_s": {
+            "mean": 540.0,
+            "ci95_low": 540.0,
+            "ci95_high": 540.0,
+            "n": 3
+          },
+          "mean_false_freezes": 0.0,
+          "n": 3
+        },
+        "E3": {
+          "alert_rate": 1.0,
+          "stopped_myr": {
+            "mean": 46500.0,
+            "ci95_low": 46500.0,
+            "ci95_high": 46500.0,
+            "n": 3
+          },
+          "time_to_detect_s": {
+            "mean": 540.0,
+            "ci95_low": 540.0,
+            "ci95_high": 540.0,
+            "n": 3
+          },
+          "mean_false_freezes": 0.0,
+          "n": 3
+        },
+        "E4": {
+          "alert_rate": 1.0,
+          "stopped_myr": {
+            "mean": 34106.20333333333,
+            "ci95_low": 31032.05,
+            "ci95_high": 36200.0,
+            "n": 3
+          },
+          "time_to_detect_s": {
+            "mean": 840.0,
+            "ci95_low": 840.0,
+            "ci95_high": 840.0,
+            "n": 3
+          },
+          "mean_false_freezes": 0.0,
+          "n": 3
+        }
+      },
+      "rows": [
+        {
+          "evasion": "E0",
+          "adaptive": false,
+          "seed": 100,
+          "ring_alerted": true,
+          "time_to_detect_s": 540,
+          "stopped_myr": 46500.0,
+          "false_freezes": 0
+        },
+        {
+          "evasion": "E0",
+          "adaptive": false,
+          "seed": 101,
+          "ring_alerted": true,
+          "time_to_detect_s": 540,
+          "stopped_myr": 46500.0,
+          "false_freezes": 0
+        },
+        {
+          "evasion": "E0",
+          "adaptive": false,
+          "seed": 102,
+          "ring_alerted": true,
+          "time_to_detect_s": 540,
+          "stopped_myr": 46500.0,
+          "false_freezes": 0
+        },
+        {
+          "evasion": "E1",
+          "adaptive": false,
+          "seed": 100,
+          "ring_alerted": true,
+          "time_to_detect_s": 780,
+          "stopped_myr": 6500.0,
+          "false_freezes": 1
+        },
+        {
+          "evasion": "E1",
+          "adaptive": false,
+          "seed": 101,
+          "ring_alerted": true,
+          "time_to_detect_s": 900,
+          "stopped_myr": 46500.0,
+          "false_freezes": 0
+        },
+        {
+          "evasion": "E1",
+          "adaptive": false,
+          "seed": 102,
+          "ring_alerted": true,
+          "time_to_detect_s": 900,
+          "stopped_myr": 46500.0,
+          "false_freezes": 0
+        },
+        {
+          "evasion": "E2",
+          "adaptive": false,
+          "seed": 100,
+          "ring_alerted": true,
+          "time_to_detect_s": 540,
+          "stopped_myr": 35086.56,
+          "false_freezes": 0
+        },
+        {
+          "evasion": "E2",
+          "adaptive": false,
+          "seed": 101,
+          "ring_alerted": true,
+          "time_to_detect_s": 540,
+          "stopped_myr": 31032.05,
+          "false_freezes": 0
+        },
+        {
+          "evasion": "E2",
+          "adaptive": false,
+          "seed": 102,
+          "ring_alerted": true,
+          "time_to_detect_s": 540,
+          "stopped_myr": 36200.0,
+          "false_freezes": 0
+        },
+        {
+          "evasion": "E3",
+          "adaptive": false,
+          "seed": 100,
+          "ring_alerted": true,
+          "time_to_detect_s": 540,
+          "stopped_myr": 46500.0,
+          "false_freezes": 0
+        },
+        {
+          "evasion": "E3",
+          "adaptive": false,
+          "seed": 101,
+          "ring_alerted": true,
+          "time_to_detect_s": 540,
+          "stopped_myr": 46500.0,
+          "false_freezes": 0
+        },
+        {
+          "evasion": "E3",
+          "adaptive": false,
+          "seed": 102,
+          "ring_alerted": true,
+          "time_to_detect_s": 540,
+          "stopped_myr": 46500.0,
+          "false_freezes": 0
+        },
+        {
+          "evasion": "E4",
+          "adaptive": true,
+          "seed": 100,
+          "ring_alerted": true,
+          "time_to_detect_s": 840,
+          "stopped_myr": 35086.56,
+          "false_freezes": 0
+        },
+        {
+          "evasion": "E4",
+          "adaptive": true,
+          "seed": 101,
+          "ring_alerted": true,
+          "time_to_detect_s": 840,
+          "stopped_myr": 31032.05,
+          "false_freezes": 0
+        },
+        {
+          "evasion": "E4",
+          "adaptive": true,
+          "seed": 102,
+          "ring_alerted": true,
+          "time_to_detect_s": 840,
+          "stopped_myr": 36200.0,
+          "false_freezes": 0
+        }
+      ],
+      "reading": "E0\u2013E4 scammer evasion sweep. E4 sets adaptive=True (longer dwell after pressure). Report honestly if detect/stop degrades."
+    },
+    "E-E": {
+      "status": "ok",
+      "block_eligible_rate": 1.0,
+      "payee_p95_ms": {
+        "mean": 0.00040000001414834213,
+        "ci95_low": 0.00039999940781854093,
+        "ci95_high": 0.0004000012268079445,
+        "n": 3
+      },
+      "compliance_rate_assumed": 0.7,
+      "rows": [
+        {
+          "seed": 100,
+          "payee_v2_tier": 3,
+          "payee_p95_ms": 0.0004000012268079445,
+          "stopped_myr": 46500.0,
+          "v2_block_eligible": true
+        },
+        {
+          "seed": 101,
+          "payee_v2_tier": 3,
+          "payee_p95_ms": 0.00039999940781854093,
+          "stopped_myr": 46500.0,
+          "v2_block_eligible": true
+        },
+        {
+          "seed": 102,
+          "payee_v2_tier": 3,
+          "payee_p95_ms": 0.00039999940781854093,
+          "stopped_myr": 46500.0,
+          "v2_block_eligible": true
+        }
+      ],
+      "reading": "Prevention path: O(1) payee-risk at V2. Compliance ~70% when tier\u22653. p95 must stay \u226a 100ms."
+    },
+    "E-F": {
+      "status": "ok",
+      "n_cases": 1,
+      "template_share": 1.0,
+      "rows": [
+        {
+          "case_id": "CASE-TPL-CAND-101-0",
+          "mode": "template",
+          "model_id": "template",
+          "validation_errors": 7,
+          "gemini_key_present": false
+        }
+      ],
+      "seeds_note": [
+        100,
+        101,
+        102
+      ],
+      "accounts_per_bank": 250,
+      "reading": "Agent quality on demo pack. Live Gemini only when GEMINI_API_KEY set; template always available (I7)."
+    },
+    "E-G": {
+      "status": "ok",
+      "federated_plus_graph": {
+        "alert_rate": 1.0,
+        "stopped_myr": {
+          "mean": 46500.0,
+          "ci95_low": 46500.0,
+          "ci95_high": 46500.0,
+          "n": 3
+        }
+      },
+      "local_model_plus_graph": {
+        "alert_rate": 1.0,
+        "stopped_myr": {
+          "mean": 46500.0,
+          "ci95_low": 46500.0,
+          "ci95_high": 46500.0,
+          "n": 3
+        }
+      },
+      "rows": [
+        {
+          "use_federated": true,
+          "seed": 100,
+          "ring_alerted": true,
+          "stopped_myr": 46500.0,
+          "time_to_detect_s": 540,
+          "ring_score": 0.9867887278460895
+        },
+        {
+          "use_federated": true,
+          "seed": 101,
+          "ring_alerted": true,
+          "stopped_myr": 46500.0,
+          "time_to_detect_s": 540,
+          "ring_score": 0.9808657475279694
+        },
+        {
+          "use_federated": true,
+          "seed": 102,
+          "ring_alerted": true,
+          "stopped_myr": 46500.0,
+          "time_to_detect_s": 540,
+          "ring_score": 0.9869132974050913
+        },
+        {
+          "use_federated": false,
+          "seed": 100,
+          "ring_alerted": true,
+          "stopped_myr": 46500.0,
+          "time_to_detect_s": 0,
+          "ring_score": 0.9450752247024049
+        },
+        {
+          "use_federated": false,
+          "seed": 101,
+          "ring_alerted": true,
+          "stopped_myr": 46500.0,
+          "time_to_detect_s": 540,
+          "ring_score": 0.9712469118134014
+        },
+        {
+          "use_federated": false,
+          "seed": 102,
+          "ring_alerted": true,
+          "stopped_myr": 46500.0,
+          "time_to_detect_s": 540,
+          "ring_score": 0.9861349994861442
+        }
+      ],
+      "dp_note": "Optional DP (clip_and_noise) is ablation-only; not enabled in default proof.",
+      "reading": "Honest ablation: if fed\u2248local+graph, credit the token graph (PLAN risk #4)."
+    }
+  },
+  "baselines_dev": {
+    "schema_version": "baselines.dev.v1",
+    "synthetic": true,
+    "badge": "SYNTHETIC DATA \u00b7 SIMULATION",
+    "in_our_simulation": true,
+    "generated_at": "2026-10-14T12:29:00.153619+00:00",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "account_fpr": 0.005,
+    "local_only": {
+      "cross_bank_ring_alert_rate": 0.0,
+      "any_mule_account_flag_rate": 1.0,
+      "mean_cashed_out_myr": 46500.002,
+      "n": 5,
+      "rows": [
+        {
+          "seed": 0,
+          "cross_bank_ring_alert": false,
+          "any_mule_account_flag": true,
+          "bank_stats": {
+            "A": {
+              "mule_flags": 2,
+              "flagged": 4,
+              "precision": 0.5
+            },
+            "B": {
+              "mule_flags": 1,
+              "flagged": 3,
+              "precision": 0.3333333333333333
+            },
+            "C": {
+              "mule_flags": 1,
+              "flagged": 3,
+              "precision": 0.3333333333333333
+            }
+          },
+          "cash_out_ts": 2064,
+          "cashed_out_myr": 46500.01
+        },
+        {
+          "seed": 1,
+          "cross_bank_ring_alert": false,
+          "any_mule_account_flag": true,
+          "bank_stats": {
+            "A": {
+              "mule_flags": 2,
+              "flagged": 4,
+              "precision": 0.5
+            },
+            "B": {
+              "mule_flags": 1,
+              "flagged": 3,
+              "precision": 0.3333333333333333
+            },
+            "C": {
+              "mule_flags": 1,
+              "flagged": 3,
+              "precision": 0.3333333333333333
+            }
+          },
+          "cash_out_ts": 2060,
+          "cashed_out_myr": 46500.0
+        },
+        {
+          "seed": 2,
+          "cross_bank_ring_alert": false,
+          "any_mule_account_flag": true,
+          "bank_stats": {
+            "A": {
+              "mule_flags": 2,
+              "flagged": 4,
+              "precision": 0.5
+            },
+            "B": {
+              "mule_flags": 2,
+              "flagged": 4,
+              "precision": 0.5
+            },
+            "C": {
+              "mule_flags": 1,
+              "flagged": 3,
+              "precision": 0.3333333333333333
+            }
+          },
+          "cash_out_ts": 2068,
+          "cashed_out_myr": 46500.0
+        },
+        {
+          "seed": 3,
+          "cross_bank_ring_alert": false,
+          "any_mule_account_flag": true,
+          "bank_stats": {
+            "A": {
+              "mule_flags": 2,
+              "flagged": 4,
+              "precision": 0.5
+            },
+            "B": {
+              "mule_flags": 1,
+              "flagged": 3,
+              "precision": 0.3333333333333333
+            },
+            "C": {
+              "mule_flags": 1,
+              "flagged": 3,
+              "precision": 0.3333333333333333
+            }
+          },
+          "cash_out_ts": 2056,
+          "cashed_out_myr": 46500.0
+        },
+        {
+          "seed": 4,
+          "cross_bank_ring_alert": false,
+          "any_mule_account_flag": true,
+          "bank_stats": {
+            "A": {
+              "mule_flags": 2,
+              "flagged": 4,
+              "precision": 0.5
+            },
+            "B": {
+              "mule_flags": 2,
+              "flagged": 4,
+              "precision": 0.5
+            },
+            "C": {
+              "mule_flags": 1,
+              "flagged": 3,
+              "precision": 0.3333333333333333
+            }
+          },
+          "cash_out_ts": 2067,
+          "cashed_out_myr": 46500.0
+        }
+      ]
+    },
+    "federated_plus_graph": {
+      "cross_bank_ring_alert_rate": 1.0,
+      "median_time_to_detect_s": 540.0,
+      "mean_stopped_myr": 38061.378000000004,
+      "n": 5,
+      "rows": [
+        {
+          "seed": 0,
+          "ring_alerted": true,
+          "time_to_detect_s": 540,
+          "stopped_myr": 46500.01,
+          "false_freezes": 0
+        },
+        {
+          "seed": 1,
+          "ring_alerted": true,
+          "time_to_detect_s": 540,
+          "stopped_myr": 46500.0,
+          "false_freezes": 0
+        },
+        {
+          "seed": 2,
+          "ring_alerted": true,
+          "time_to_detect_s": 540,
+          "stopped_myr": 44306.88,
+          "false_freezes": 0
+        },
+        {
+          "seed": 3,
+          "ring_alerted": true,
+          "time_to_detect_s": 540,
+          "stopped_myr": 46500.0,
+          "false_freezes": 0
+        },
+        {
+          "seed": 4,
+          "ring_alerted": true,
+          "time_to_detect_s": 480,
+          "stopped_myr": 6500.0,
+          "false_freezes": 0
+        }
+      ]
+    },
+    "reading": "In our simulation, local-only banks can flag individual mule-like accounts but never raise a cross-bank ring alert; money leaves (~mean cashed out). Federated+graph raises ring alerts and measures ringgit stopped via counterfactual replay."
+  },
+  "limitations": "See LIMITATIONS.md \u2014 privacy by design on pseudonymised data; not compliance."
+}
